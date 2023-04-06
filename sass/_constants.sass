@@ -58,8 +58,7 @@ h2
 .base-srch
     padding: 20px
     background-color: #eceef3
-    
-
+ 
 .base-btn
     @include flex_center()  
     border: 2px solid $primary-dsg-color
@@ -129,8 +128,33 @@ h2
         border-radius: 50%
         animation: rotateSpinner .3s infinite ease
 
+#scroll-top
+    position: fixed
+    bottom: 40px
+    right: 40px
+    height: 50px
+    width: 50px
+    opacity: 0
+    background-color: $primary-dsg-color
+    @include flex_center()
+    color: $primary-txt-color
+    cursor: pointer  
+    font-size: 40px
+
 @keyframes rotateSpinner 
     0%
         transform: rotate(0deg)
     100%
         transform: rotate(360deg) 
+
+@keyframes appearance
+    0% 
+        opacity: 0   
+    100% 
+        opacity: 1
+
+@keyframes disappearance
+    0% 
+        opacity: 1
+    100% 
+        opacity: 0

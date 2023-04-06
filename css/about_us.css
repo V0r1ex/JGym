@@ -152,12 +152,45 @@ h2 {
   animation: rotateSpinner 0.3s infinite ease;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  background-color: #fffc3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  color: #646464;
+  cursor: pointer;
+  font-size: 40px;
+}
+
 @keyframes rotateSpinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .header {
@@ -378,12 +411,45 @@ h2 {
   animation: rotateSpinner 0.3s infinite ease;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  background-color: #fffc3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  color: #646464;
+  cursor: pointer;
+  font-size: 40px;
+}
+
 @keyframes rotateSpinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .footer {
@@ -749,12 +815,45 @@ h2 {
   animation: rotateSpinner 0.3s infinite ease;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  background-color: #fffc3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  color: #646464;
+  cursor: pointer;
+  font-size: 40px;
+}
+
 @keyframes rotateSpinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .section-intro {
@@ -1098,12 +1197,45 @@ h2 {
   animation: rotateSpinner 0.3s infinite ease;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  background-color: #fffc3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  color: #646464;
+  cursor: pointer;
+  font-size: 40px;
+}
+
 @keyframes rotateSpinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media (max-width: 980px) {
@@ -1301,12 +1433,45 @@ h2 {
   animation: rotateSpinner 0.3s infinite ease;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  background-color: #fffc3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  color: #646464;
+  cursor: pointer;
+  font-size: 40px;
+}
+
 @keyframes rotateSpinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media (max-width: 1400px) {
