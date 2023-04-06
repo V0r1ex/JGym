@@ -1,0 +1,63 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+@import '../components/_header.sass'
+@import '../components/_footer.sass'
+@import '../components/_trainers.sass'
+@import '../components/_subscribe.sass'
+@import '../components/_intro.sass'
+
+.section-intro
+    background-image: url(../img/contact/intro.png)
+
+.section-contact
+    color: $primary-h-color
+    @include flex_center()  
+    padding: 80px 0
+    .section-inner
+        @include flex_center(50px) 
+        align-items: flex-start
+        width: 50%
+        .contact-info
+            @include flex_center(30px)
+            flex-direction: column
+            align-items: flex-start
+            flex-wrap: wrap
+            flex-shrink: 0
+            justify-content: space-between
+            .contact
+                .contact-icon
+                    height: 50px
+                    width: 50px
+                .contact-body
+                    margin-top: 10px
+                    @include flex_center()  
+                    color: $primary-txt-color
+        .contact-form-container
+            @include flex_center(30px)
+            flex-direction: column  
+            align-items: flex-start
+            flex-wrap: wrap
+            .contact-form
+                @include flex_center(10px)
+                flex-wrap: wrap
+                justify-content: start
+                .contact-form-row
+                    @include flex_center(10px)
+                    width: 100%
+                    justify-content: space-between
+                button, input
+                    height: 60px
+                .base-btn
+                    color: $primary-h-color
+                .huge
+                    height: 130px
+                .base-int
+                    width: 100%
+                    background-color: #f7f7f7
+                .long
+                    width: 100%
+
+@import '../_media.sass'
+@import '_media_contact.sass'
+
+        

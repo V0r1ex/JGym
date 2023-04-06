@@ -1,0 +1,98 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+@import '../components/_header.sass'
+@import '../components/_promo.sass'
+@import '../components/_footer.sass'
+@import '../components/_trainers.sass'
+@import '../components/_subscribe.sass'
+@import '../components/_intro.sass'
+
+.section-promo
+    .features-container
+        flex-wrap: wrap
+    .bodybuilding::before
+        background-image: url(../img/classes/icon1.png)
+    .finess::before
+        background-image: url(../img/classes/icon2.png)
+    .aerobics::before
+        background-image: url(../img/classes/icon3.png)
+    .pilates::before
+        background-image: url(../img/classes/icon4.png)
+    .lifting::before
+        background-image: url(../img/classes/icon5.png)
+    .nutrition::before
+        background-image: url(../img/classes/icon6.png)
+
+.section-intro
+    background-image: url(../img/classes/intro.png)
+
+.section-prices
+    background-image: url(../img/classes/prices.png)
+    background-size: cover
+    background-position: center
+    color: $secondary-txt-color
+    padding: 80px 0
+    @include flex_center()  
+    &::before
+        @include before_equal()
+        background-color: rgba(0, 0, 0, 0.7)
+    .section-inner
+        @include flex_center()  
+        flex-direction: column
+        width: 80%
+        text-align: center
+        .prices-header
+            margin-bottom: 40px
+            .bgc-yellow
+                color: $primary-h-color
+        .prices-cards-container
+            @include flex_center(30px)
+            flex-wrap: wrap
+            .price-card:hover
+                background-color: $primary-dsg-color
+                border: 2px solid $primary-dsg-color
+                color: $primary-h-color
+                .opportunities-ol .line
+                    background-color: $primary-h-color
+                .base-btn
+                    background-color: $primary-h-color
+                    border-color: $primary-h-color
+            .price-card
+                transition: .4s ease
+                border: 2px solid $secondary-txt-color
+                @include flex_center() 
+                flex-direction: column
+                height: 600px
+                justify-content: space-between
+                padding: 20px
+                width: 300px
+                .price
+                    font-size: 40px
+                .opportunities-ol
+                    @include flex_center(10px)
+                    flex-direction: column
+                    justify-content: space-between
+                    height: 200px
+                    .line
+                        width: 30px
+                        height: 2px
+                        background-color: $primary-dsg-color 
+                .base-btn
+                    margin-top: 20px
+
+.section-message
+    padding: 80px 
+    .section-inner
+        @include flex_center(40px) 
+        flex-direction: column
+        align-items: flex-start
+        .message-header
+            color: $primary-h-color
+        .message-p
+            color: $primary-txt-color
+            max-width: 50%
+        .base-btn
+            color: $primary-h-color
+
+@import '../_media.sass'
+@import '_media_classes.sass'

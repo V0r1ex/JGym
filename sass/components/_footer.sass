@@ -1,0 +1,68 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+.footer
+    padding: 50px
+    background-image: url(../img/home/intro.png)
+    background-position: center
+    background-size: cover
+    color: $secondary-txt-color
+    position: relative
+    @include flex_center()
+    &::before
+        z-index: 0
+        @include before_equal()   
+        background-color: rgba(26, 26, 26, 0.9)
+    .footer-inner
+        z-index: 1
+        position: relative
+        width: 80%
+        height: 100%
+        display: flex
+        gap: 40px
+        align-content: space-around
+        flex-wrap: wrap
+        .rights-container
+            @include flex_center()
+            justify-content: space-between
+            width: 100%
+            flex-wrap: wrap
+            .rights
+                color: $primary-txt-color
+            .footer-navbar
+                width: 50%
+                font-weight: bold
+                &-list
+                    @include flex_center(20px)
+                    flex-wrap: wrap 
+                    width: 100%
+                    justify-content: space-around
+                    .footer-navbar-item a
+                        color: $secondary-txt-color
+                        text-decoration: none
+                        &:hover
+                            text-decoration: underline
+        .communications-container
+            width: 100%
+            @include flex_center(50px)
+            flex-wrap: wrap
+            .communication
+                &-body
+                    @include flex_center()
+                    .links-container
+                       @include flex_center()
+                       justify-content: space-around
+                       width: 150px
+                       .link-icon
+                            cursor: pointer
+                            a
+                                color: $secondary-txt-color
+                    .communication-icon
+                        height: 50px
+                        width: 50px
+                        font-size: 30px
+                        @include flex_center()
+                        color: $primary-dsg-color
+                &-header
+                    font-size: $h2-size
+                    margin: 10px
+                    

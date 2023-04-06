@@ -1,0 +1,28 @@
+.section-subscribe
+    @include flex_center()  
+    background-image: url(../img/home/subscribe.png)
+    background-size: cover
+    background-position: center
+    padding: 30px
+    &::before
+        @include before_equal()   
+        background-color: rgba(95, 95, 95, 0.7)
+    .section-inner
+        text-align: center
+        @include flex_center(100px)
+        width: 100% 
+        .subscribe-header
+            color: $secondary-txt-color
+            flex-shrink: 10
+            margin-bottom: 0
+            .bgc-yellow
+                color: $primary-h-color
+        .subscribe-form
+            width: 50%
+            @include flex_center() 
+            button
+                width: 30%
+            input
+                width: 70%
+            button, input
+                    height: 60px

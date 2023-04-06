@@ -1,0 +1,124 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+@import '../components/_header.sass'
+@import '../components/_promo.sass'
+@import '../components/_footer.sass'
+@import '../components/_subscribe.sass'
+@import '../components/_trainers.sass'
+
+.section-intro
+    padding: 200px 0
+    background-image: url(../img/home/intro.png)
+    background-size: cover
+    background-position: center
+    color: $secondary-txt-color
+    @include flex_center()
+    text-align: center
+    z-index: 1
+    &::before
+        @include before_equal()   
+        background-color: $bg-dark
+    .section-inner
+        .intro-btn
+            width: 250px
+        @include flex_center(20px)
+        flex-direction: column
+
+.section-promo
+    .progress::before
+        background-image: url(../img/home/icon1.png)
+    .health::before
+        background-image: url(../img/home/icon2.png)
+    .success::before
+        background-image: url(../img/home/icon3.png)
+
+.section-course
+    padding: 40px
+    background-image: url(../img/home/course.png)
+    background-size: cover
+    background-position: center
+    color: $secondary-txt-color
+    .section-inner
+        @include flex_center()
+        text-align: start
+        align-items: start
+        flex-direction: column
+        margin-left: 55%
+        height: 100%
+        .course-header
+            max-width: 45%
+        .course-arguments
+            .arguments-item
+                @include flex_center(20px)
+                justify-content: start
+                margin: 30px 0
+                .arguments-item-icon
+                    @include flex_center()
+                    width: 25px
+                    height: 25px
+                    border-radius: 50%
+                    color: $primary-h-color
+                    background-color: $primary-dsg-color
+        .course-btn
+            width: 250px
+
+.section-statistics
+    padding: 40px
+    @include flex_center()
+    background-color: $secondary-txt-color
+    .section-inner
+        @include flex_center(50px)
+        width: 80%
+        justify-content: space-around
+        flex-wrap: wrap
+        .statistics-item
+            .statistics-item-number
+                font-size: $h2-size
+                font-weight: bold
+                color: $primary-h-color
+            .statistics-item-header
+                color: $primary-txt-color
+            @include flex_center(10px)
+            flex-direction: column
+
+.section-calculator
+    height: 70vh
+    @include flex_center() 
+    .calculator-img
+        height: 100%
+        width: 40% 
+        flex-shrink: 10
+        background-image: url(../img/home/calculator.png)
+        background-size: cover
+        z-index: 1
+        filter: grayscale(100%)
+        position: relative
+        &::before
+            @include before_equal()
+            background-color: rgba(37, 37, 37, 0.6)
+    .section-inner
+        background-color: $secondary-txt-color
+        padding: 80px
+        height: 100%
+        width: 60%
+        .calculator-container
+            width: 700px
+            .calculator-content
+                .calculator-header
+                    color: $primary-h-color
+            .calculator 
+                margin-top: 40px 
+                background-color: $primary-h-color
+                @include flex_center() 
+                padding: 40px
+                .calculator-form
+                    width: 100%
+                    @include flex_center(30px) 
+                    flex-wrap: wrap
+                    button, input
+                        width: 250px
+                        height: 60px
+
+@import '../_media.sass'
+@import '_media_home.sass'
+

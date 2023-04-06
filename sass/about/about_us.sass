@@ -1,0 +1,113 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+@import '../components/_header.sass'
+@import '../components/_footer.sass'
+@import '../components/_trainers.sass'
+@import '../components/_subscribe.sass'
+@import '../components/_intro.sass'
+
+.section-intro
+    background-image: url(../img/about_us/intro.png)
+
+.section-promo
+    padding: 80px 0
+    color: $secondary-txt-color
+    @include flex_center()
+    .section-inner
+        @include flex_center()
+        flex-direction: column
+        width: 80%
+        .promo-content
+            width: 100%
+            @include flex_center(30px)
+            justify-content: space-around
+            margin-bottom: 40px
+            &-p
+                max-width: 400px
+            &-img
+                height: 300px
+                object-fit: contain
+        .promo-header
+            color: $primary-h-color
+        .base-btn
+            color: $primary-h-color
+
+.section-statistics
+    padding: 80px 0
+    background-image: url(../img/about_us/statistics.png)
+    background-position: center
+    background-size: cover
+    @include flex_center()
+    &::before
+        @include before_equal()
+        background-color: rgba(0, 0, 0, 0.7)
+    .section-inner
+        width: 80%
+        @include flex_center()
+        flex-wrap: wrap
+        justify-content: space-around
+        
+        .statistic
+            border-radius: 50%
+            @include flex_center()
+            flex-direction: column
+            height: 200px
+            width: 200px
+            $value: calc(var(--value)*10)
+            svg
+                position: absolute 
+                circle 
+                    fill: transparent
+                    stroke: $primary-dsg-color
+                    stroke-width: 2
+                    stroke-dasharray: 500
+                    stroke-dashoffset: 1000 
+            &-number
+                font-weight: bold
+                font-size: 40px
+                color: $primary-dsg-color
+            &-header
+                color: $secondary-txt-color
+
+.section-invitation
+    padding: 80px 0
+    @include flex_center()
+    .section-inner 
+        width: 1200px
+        padding-left: 500px
+        background-image: url(../img/about_us/invitation.png)
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: 0 0
+        .invitation-header
+            color: $primary-h-color
+        .invitation-form
+            @include flex_center(20px)
+            flex-wrap: wrap 
+            .invitation-form-row
+                @include flex_center(10px)
+                width: 100%
+                justify-content: space-between
+            button, input
+                height: 60px
+            .base-int
+                width: 100%
+                background-color: #f7f7f7
+            .long
+                flex-basis: 100%
+            .invitation-btns-container
+                .base-btn
+                    color: $primary-h-color
+                .dark-btn    
+                    &:hover
+                        color: $secondary-txt-color
+                @include flex_center()
+                width: 100%
+                justify-content: space-between
+
+@import '../_media.sass'
+@import '_media_about.sass'
+
+
+    

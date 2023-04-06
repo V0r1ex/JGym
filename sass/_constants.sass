@@ -1,0 +1,136 @@
+@import '_mixins.sass'
+
+$primary-h-color: #252525
+$h1-size: 55px
+$h2-size: 30px
+$primary-txt-color: #646464
+$primary-dsg-color: #fffc3a
+$primary-font: 'PT Sans', sans-serif
+$secondary-txt-color: #f7f7f7
+$bg-dark: rgba(0, 0, 0, 0.5)
+
+*::-webkit-scrollbar 
+    width: 10px 
+    height: 10px
+
+*::-webkit-scrollbar-track 
+    background-color: rgb(59, 59, 59)
+
+*::-webkit-scrollbar-thumb 
+    background-color: $primary-dsg-color
+    border-radius: 2px
+
+body
+    min-height: 100vh
+    position: relative
+    font-family: $primary-font
+    font-size: 18px
+
+p
+    line-height: 30px
+    color: $primary-txt-color
+
+h1
+    font-size: $h1-size
+    margin-bottom: 20px
+
+h2
+    font-size: $h2-size
+
+.bgc-yellow
+    padding: 5px
+    background-color: $primary-dsg-color
+
+.c-yellow
+    color: $primary-dsg-color
+
+.base-int
+    background-color: #fff
+    padding: 20px
+    height: 80px
+    border: 2px solid transparent
+    &:focus
+        border-color: $primary-dsg-color
+    &::placeholder
+        color: #aaaaaa
+        font-style: italic
+
+.base-srch
+    padding: 20px
+    background-color: #eceef3
+    
+
+.base-btn
+    @include flex_center()  
+    border: 2px solid $primary-dsg-color
+    padding: 20px
+    font-weight: bold
+    position: relative
+    overflow: hidden
+    font-size: 20px
+    height: 80px
+    z-index: 1
+    color: $secondary-txt-color
+    transition: .2s ease-in-out
+    &:after 
+        content: ''
+        position: absolute
+        display: block
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 0
+        height: 105%
+        background: $primary-dsg-color
+        z-index: -1
+        transition: 0.2s ease-in-out
+    &:hover:after 
+        width: 101%
+    &:hover
+        color: $primary-h-color
+
+.dark-btn
+    border-color: $primary-h-color
+    &:after 
+        background: $primary-h-color
+    &:hover
+        color: $secondary-txt-color
+
+.section-inner
+    position: relative
+    z-index: 1
+
+.section-outer
+    position: relative
+    z-index: 0
+
+.dark
+    position: fixed
+    width: 100%
+    height: 100vh
+    z-index: 1
+    transition: 0.5s
+    pointer-events: none
+    background-color: rgba(0, 0, 0, 0.6)
+
+.loader
+    position: fixed
+    width: 100%
+    @include flex_center() 
+    height: 100vh
+    z-index: 15
+    top: 0
+    #spinner
+        width: 90px
+        height: 90px
+        z-index: 2
+        border: 6px solid $primary-dsg-color
+        border-color: $primary-dsg-color transparent
+        border-radius: 50%
+        animation: rotateSpinner .3s infinite ease
+
+@keyframes rotateSpinner 
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg) 

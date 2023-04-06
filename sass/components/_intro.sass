@@ -1,0 +1,17 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+
+.section-intro
+    padding: 40px
+    background-position: center
+    background-size: cover
+    &::before
+        @include before_equal()
+        background-color: $bg-dark
+    .section-inner
+        @include flex_center()
+        height: 100%      
+        .page-name
+            font-size: 80px
+            color: $secondary-txt-color
+            border-bottom: 4px solid $primary-dsg-color 

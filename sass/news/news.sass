@@ -1,0 +1,99 @@
+@import '../_constants.sass'
+@import '../_mixins.sass'
+@import '../components/_header.sass'
+@import '../components/_footer.sass'
+@import '../components/_trainers.sass'
+@import '../components/_subscribe.sass'
+@import '../components/_intro.sass'
+
+.section-intro
+    background-image: url(../img/news/intro.png)
+
+.section-main
+    padding: 80px
+    .section-inner
+        display: flex 
+        gap: 20px  
+        width: 80% 
+        margin: 0 auto 
+        .main
+            width: 70%
+            .news-container
+                @include flex_center(70px)
+                flex-direction: column
+                .news
+                    @include flex_center(30px)
+                    flex-direction: column
+                    align-items: flex-start
+                    .news-header
+                        color: $primary-h-color
+                        font-size: 40px
+                    .base-btn
+                        color: $primary-h-color
+                        height: 60px
+                        width: 200px
+                    .specifications-container
+                        color: $primary-txt-color
+                        font-size: 15px
+                        display: flex
+                        gap: 30px
+                        flex-wrap: wrap
+                        .specification
+                            @include flex_center(5px)
+            .pagination-container
+                margin-top: 70px
+                display: flex
+                gap: 10px 
+                .page
+                    @include flex_center()
+                    height: 30px
+                    width: 30px
+                    transition: .2s ease-in-out
+                .page:not(.bgc-black):hover
+                    background-color: #ebebeb
+                .bgc-black
+                    background-color: #000000  
+                    color: #fff
+        .aside
+            width: 30%
+            display: flex
+            flex-direction: column
+            gap: 40px
+            color: $primary-txt-color
+            h2
+                color: $primary-h-color
+            .categories-container
+                .category
+                   display: flex
+                   justify-content: space-between
+                   margin-top: 20px
+                   .category-number
+                        @include flex_center()
+                        height: 27px
+                        width: 27px
+                        font-size: 14px
+                        border-radius: 50%
+                        background-color: $primary-dsg-color
+            .posts
+                margin-top: 20px
+                .post
+                    margin-top: 10px
+                .post-date
+                    background-color: $primary-dsg-color
+                    width: fit-content
+                    padding: 5px
+                    font-size: 10px
+                    margin-top: 5px
+            .tags-container
+                .tags
+                    display: flex
+                    gap: 20px
+                    flex-wrap: wrap
+                    margin-top: 20px
+                    justify-content: space-around
+                    .tag
+                        padding: 5px
+                        background-color: $primary-dsg-color 
+
+@import '../_media.sass'
+@import '_media_news.sass'

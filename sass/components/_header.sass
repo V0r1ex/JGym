@@ -1,0 +1,46 @@
+@import '../_mixins.sass'
+.header
+    padding: 20px
+    color: $primary-h-color
+    @include flex_center()
+    .header-inner
+        width: 100%
+        @include flex_center()
+        justify-content: space-between
+        .header-name
+            a
+                color: $primary-h-color
+                text-decoration: none
+            .bgc-yellow
+                margin-right: 10px
+            font-size: 40px
+            cursor: pointer
+            position: relative
+            &::before
+                position: absolute
+                left: 50%
+                height: 3px
+                width: 0
+                transition: 0.5s ease
+                background-color: $primary-h-color
+                top: 100%
+                content: ''
+            &:hover:before
+                left: 0
+                width: 100%  
+        .header-navbar
+            font-weight: bold
+            &-list
+                @include flex_center(20px)
+                a
+                    color: $primary-h-color
+                    text-decoration: none
+                    .header-navbar-item
+                        padding: 10px
+                        text-align: center
+                        font-size: 20px
+                        &:hover
+                            background-color: $primary-dsg-color
+
+
+    

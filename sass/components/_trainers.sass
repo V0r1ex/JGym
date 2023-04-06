@@ -1,0 +1,28 @@
+.section-trainers
+    padding: 80px 0
+    .section-inner
+        text-align: center
+        .trainers-header
+            color: $primary-h-color
+        @include flex_center(40px)
+        flex-direction: column
+        .trainers-container
+                @include flex_center(20px)
+                justify-content: space-around
+                flex-wrap: wrap 
+                .trainer
+                    @include flex_center(20px)
+                    flex-direction: column
+                    max-width: 350px
+                    &-name
+                        font-size: $h2-size
+                        color: $primary-h-color
+                    &-img-container
+                        width: 200px
+                        height: 200px
+                        border-radius: 50%
+                        overflow: hidden 
+                        @include flex_center()
+                        .trainer-img
+                            height: 100%
+                            object-fit: cover
