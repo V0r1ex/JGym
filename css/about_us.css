@@ -81,6 +81,14 @@ h2 {
   color: #f7f7f7;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (min-width: 480px) {
+  .base-btn:hover:after {
+    width: 101%;
+  }
+  .base-btn:hover {
+    color: #252525;
+  }
+}
 .base-btn:after {
   content: "";
   position: absolute;
@@ -93,12 +101,6 @@ h2 {
   background: #fffc3a;
   z-index: -1;
   transition: 0.2s ease-in-out;
-}
-.base-btn:hover:after {
-  width: 101%;
-}
-.base-btn:hover {
-  color: #252525;
 }
 
 .dark-btn {
@@ -114,6 +116,7 @@ h2 {
 .section-inner {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .section-outer {
@@ -340,6 +343,14 @@ h2 {
   color: #f7f7f7;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (min-width: 480px) {
+  .base-btn:hover:after {
+    width: 101%;
+  }
+  .base-btn:hover {
+    color: #252525;
+  }
+}
 .base-btn:after {
   content: "";
   position: absolute;
@@ -352,12 +363,6 @@ h2 {
   background: #fffc3a;
   z-index: -1;
   transition: 0.2s ease-in-out;
-}
-.base-btn:hover:after {
-  width: 101%;
-}
-.base-btn:hover {
-  color: #252525;
 }
 
 .dark-btn {
@@ -373,6 +378,7 @@ h2 {
 .section-inner {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .section-outer {
@@ -454,7 +460,7 @@ h2 {
 }
 .footer {
   padding: 50px;
-  background-image: url(../img/home/intro.png);
+  background-image: url(../../img/home/intro.png);
   background-position: center;
   background-size: cover;
   color: #f7f7f7;
@@ -541,6 +547,23 @@ h2 {
 .footer .footer-inner .communications-container .communication-body .links-container .link-icon {
   cursor: pointer;
 }
+.footer .footer-inner .communications-container .communication-body .links-container .link-icon .fa {
+  transition: color 0.1s ease-in-out;
+}
+@media only screen and (min-width: 480px) {
+  .footer .footer-inner .communications-container .communication-body .links-container .link-icon .fa-telegram:hover {
+    color: #b1edff;
+  }
+  .footer .footer-inner .communications-container .communication-body .links-container .link-icon .fa-youtube-play:hover {
+    color: #ff9191;
+  }
+  .footer .footer-inner .communications-container .communication-body .links-container .link-icon .fa-facebook-official:hover {
+    color: #6b8af0;
+  }
+  .footer .footer-inner .communications-container .communication-body .links-container .link-icon .fa-twitter-square:hover {
+    color: #83c1fa;
+  }
+}
 .footer .footer-inner .communications-container .communication-body .links-container .link-icon a {
   color: #f7f7f7;
 }
@@ -614,7 +637,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 0;
-  background-image: url(../img/home/subscribe.png);
+  background-image: url(../../img/home/subscribe.png);
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -744,6 +767,14 @@ h2 {
   color: #f7f7f7;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (min-width: 480px) {
+  .base-btn:hover:after {
+    width: 101%;
+  }
+  .base-btn:hover {
+    color: #252525;
+  }
+}
 .base-btn:after {
   content: "";
   position: absolute;
@@ -756,12 +787,6 @@ h2 {
   background: #fffc3a;
   z-index: -1;
   transition: 0.2s ease-in-out;
-}
-.base-btn:hover:after {
-  width: 101%;
-}
-.base-btn:hover {
-  color: #252525;
 }
 
 .dark-btn {
@@ -777,6 +802,7 @@ h2 {
 .section-inner {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .section-outer {
@@ -884,7 +910,7 @@ h2 {
 }
 
 .section-intro {
-  background-image: url(../img/about_us/intro.png);
+  background-image: url(../../img/about_us/intro.png);
 }
 
 .section-promo {
@@ -929,7 +955,7 @@ h2 {
 
 .section-statistics {
   padding: 80px 0;
-  background-image: url(../img/about_us/statistics.png);
+  background-image: url(../../img/about_us/statistics.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -994,7 +1020,7 @@ h2 {
 .section-invitation .section-inner {
   width: 1200px;
   padding-left: 500px;
-  background-image: url(../img/about_us/invitation.png);
+  background-image: url(../../img/about_us/invitation.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1126,6 +1152,14 @@ h2 {
   color: #f7f7f7;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (min-width: 480px) {
+  .base-btn:hover:after {
+    width: 101%;
+  }
+  .base-btn:hover {
+    color: #252525;
+  }
+}
 .base-btn:after {
   content: "";
   position: absolute;
@@ -1138,12 +1172,6 @@ h2 {
   background: #fffc3a;
   z-index: -1;
   transition: 0.2s ease-in-out;
-}
-.base-btn:hover:after {
-  width: 101%;
-}
-.base-btn:hover {
-  color: #252525;
 }
 
 .dark-btn {
@@ -1159,6 +1187,7 @@ h2 {
 .section-inner {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .section-outer {
@@ -1264,6 +1293,9 @@ h2 {
   }
 }
 @media (max-width: 700px) {
+  .section-inner {
+    width: 80% !important;
+  }
   .header-inner {
     flex-direction: column !important;
   }
@@ -1272,11 +1304,31 @@ h2 {
   }
 }
 @media (max-width: 500px) {
+  .section-message, .section-calculator .section-inner {
+    padding: 20px !important;
+  }
   .header-navbar-list {
     gap: 5px !important;
   }
   .header-navbar-item {
     font-size: 15px !important;
+  }
+  .base-btn {
+    color: #252525;
+    background-color: #fffc3a;
+  }
+  .dark-btn {
+    color: #f7f7f7 !important;
+    background-color: #252525 !important;
+  }
+  .link-icon a {
+    font-size: 28px;
+  }
+  .section-subscribe .base-btn, .section-subscribe .base-int {
+    width: 100% !important;
+  }
+  .section-subscribe .subscribe-form {
+    flex-direction: column;
   }
 }
 *::-webkit-scrollbar {
@@ -1362,6 +1414,14 @@ h2 {
   color: #f7f7f7;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (min-width: 480px) {
+  .base-btn:hover:after {
+    width: 101%;
+  }
+  .base-btn:hover {
+    color: #252525;
+  }
+}
 .base-btn:after {
   content: "";
   position: absolute;
@@ -1374,12 +1434,6 @@ h2 {
   background: #fffc3a;
   z-index: -1;
   transition: 0.2s ease-in-out;
-}
-.base-btn:hover:after {
-  width: 101%;
-}
-.base-btn:hover {
-  color: #252525;
 }
 
 .dark-btn {
@@ -1395,6 +1449,7 @@ h2 {
 .section-inner {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .section-outer {

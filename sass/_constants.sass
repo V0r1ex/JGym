@@ -71,6 +71,11 @@ h2
     z-index: 1
     color: $secondary-txt-color
     transition: .2s ease-in-out
+    @media only screen and (min-width: 480px) 
+        &:hover:after 
+            width: 101%
+        &:hover
+            color: $primary-h-color
     &:after 
         content: ''
         position: absolute
@@ -83,11 +88,6 @@ h2
         background: $primary-dsg-color
         z-index: -1
         transition: 0.2s ease-in-out
-    &:hover:after 
-        width: 101%
-    &:hover
-        color: $primary-h-color
-
 .dark-btn
     border-color: $primary-h-color
     &:after 
@@ -98,6 +98,7 @@ h2
 .section-inner
     position: relative
     z-index: 1
+    margin: 0 auto
 
 .section-outer
     position: relative

@@ -11,23 +11,23 @@
     .features-container
         flex-wrap: wrap
     .bodybuilding::before
-        background-image: url(../img/classes/icon1.png)
+        background-image: url(../../img/classes/icon1.png)
     .finess::before
-        background-image: url(../img/classes/icon2.png)
+        background-image: url(../../img/classes/icon2.png)
     .aerobics::before
-        background-image: url(../img/classes/icon3.png)
+        background-image: url(../../img/classes/icon3.png)
     .pilates::before
-        background-image: url(../img/classes/icon4.png)
+        background-image: url(../../img/classes/icon4.png)
     .lifting::before
-        background-image: url(../img/classes/icon5.png)
+        background-image: url(../../img/classes/icon5.png)
     .nutrition::before
-        background-image: url(../img/classes/icon6.png)
+        background-image: url(../../img/classes/icon6.png)
 
 .section-intro
-    background-image: url(../img/classes/intro.png)
+    background-image: url(../../img/classes/intro.png)
 
 .section-prices
-    background-image: url(../img/classes/prices.png)
+    background-image: url(../../img/classes/prices.png)
     background-size: cover
     background-position: center
     color: $secondary-txt-color
@@ -48,15 +48,16 @@
         .prices-cards-container
             @include flex_center(30px)
             flex-wrap: wrap
-            .price-card:hover
-                background-color: $primary-dsg-color
-                border: 2px solid $primary-dsg-color
-                color: $primary-h-color
-                .opportunities-ol .line
-                    background-color: $primary-h-color
-                .base-btn
-                    background-color: $primary-h-color
-                    border-color: $primary-h-color
+            @media only screen and (min-width: 480px)
+                .price-card:hover
+                    background-color: $primary-dsg-color
+                    border: 2px solid $primary-dsg-color
+                    color: $primary-h-color
+                    .opportunities-ol .line
+                        background-color: $primary-h-color
+                    .base-btn
+                        background-color: $primary-h-color
+                        border-color: $primary-h-color
             .price-card
                 transition: .4s ease
                 border: 2px solid $secondary-txt-color

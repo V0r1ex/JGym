@@ -1,8 +1,9 @@
 @import '../_constants.sass'
 @import '../_mixins.sass'
+
 .footer
     padding: 50px
-    background-image: url(../img/home/intro.png)
+    background-image: url(../../img/home/intro.png)
     background-position: center
     background-size: cover
     color: $secondary-txt-color
@@ -54,6 +55,17 @@
                        width: 150px
                        .link-icon
                             cursor: pointer
+                            .fa
+                                transition: color .1s ease-in-out
+                            @media only screen and (min-width: 480px)
+                                .fa-telegram:hover
+                                    color: #b1edff
+                                .fa-youtube-play:hover
+                                    color: #ff9191
+                                .fa-facebook-official:hover
+                                        color: #6b8af0
+                                .fa-twitter-square:hover
+                                        color: #83c1fa
                             a
                                 color: $secondary-txt-color
                     .communication-icon

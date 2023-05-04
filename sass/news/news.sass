@@ -7,7 +7,7 @@
 @import '../components/_intro.sass'
 
 .section-intro
-    background-image: url(../img/news/intro.png)
+    background-image: url(../../img/news/intro.png)
 
 .section-main
     padding: 80px
@@ -49,8 +49,9 @@
                     height: 30px
                     width: 30px
                     transition: .2s ease-in-out
-                .page:not(.bgc-black):hover
-                    background-color: #ebebeb
+                    @media only screen and (min-width: 480px)
+                        &:not(.bgc-black):hover
+                            background-color: #ebebeb
                 .bgc-black
                     background-color: #000000  
                     color: #fff

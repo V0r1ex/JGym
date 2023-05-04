@@ -19,18 +19,34 @@
                 margin-bottom: 20px
 
 @media (max-width: 700px)
+    .section-inner
+        width: 80% !important
     .header-inner
         flex-direction: column !important
     .header-navbar-list
         gap: 10px !important
 
 @media (max-width: 500px)
+    .section-message, .section-calculator .section-inner
+        padding: 20px !important 
     .header-navbar-list
         gap: 5px !important
     .header-navbar-item
         font-size: 15px !important
-
-
+    .base-btn
+        color: $primary-h-color
+        background-color: $primary-dsg-color
+    .dark-btn
+        color: $secondary-txt-color !important
+        background-color: $primary-h-color !important
+    .link-icon a
+        font-size: 28px 
+    .section-subscribe 
+        .base-btn, .base-int
+            width: 100% !important
+        .subscribe-form
+            flex-direction: column
+        
 
 
     
